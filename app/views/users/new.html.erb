@@ -1,2 +1,10 @@
 <h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<div class="new-user">
+  <%= form_with model: @user, local: true do |f| %>
+    <%= f.label "EMAIL" %>
+    <%= f.text_field :email %>
+    <%= f.label "LOGIN" %>
+    <%= f.text_field :login %>
+    <%= f.text_field :password %>
+  <%= end %>
+</div>
