@@ -5,6 +5,53 @@ RSpec.describe 'users/new.html.erb', type: :view do
     visit root_path
 
     within '.new-user' do
+      fill_in 'user_email', with: 'dkulback@gmail.com'
+      fill_in 'user_login', with: 'dkulback'
+      fill_in 'user_password', with: '12345'
+      click_on 'Create User'
+
+      user = User.first
+      expect(current_path).to eq(user_path(user))
+    end
+    user = User.first
+    within '.success' do
+      expect(page).to have_content("Welcome #{user.login}!")
+    end
+  end
+  it 'has a link to sign in with valid credentials' do
+    User.create!(login: 'dkulback', email: 'dkulback@gmail.com', password: '12345')
+    visit root_path
+    click_link 'Already have an account?'
+
+    expect(current_path).to eq(login_path)
+    within '.login-form' do
+      fill_in 'email', with: 'dkulback@gmail.com'
+      fill_in 'login', with: 'dkulback'
+      fill_in 'password', with: '12345'
+      click_on 'Log In'
+
+      user = User.first
+      expect(current_path).to eq(user_path(user))
+    end
+    within '.success' do
+      user = User.first
+      expect(page).to have_content("Welcome #{user.login}!")
+    end
+  end
+  it 'wont login in with BAD credentials' do
+    User.create!(login: 'dkulback', email: 'dkulback@gmail.com', password: '12345')
+    visit root_path
+    click_link 'Already have an account?'
+
+    expect(current_path).to eq(login_path)
+    within '.login-form' do
+      fill_in 'email', with: 'dkulback@gmail.com'
+      fill_in 'login', with: 'dkulback'
+      fill_in 'password', with: '123456'
+      click_on 'Log In'
+    end
+    within '.error' do
+      expect(page).to have_content('invalid password or username')
     end
   end
 end

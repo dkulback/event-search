@@ -1,4 +1,4 @@
-<h1>Users#new</h1>
+<h1>WELCOME! PLEASE CREATE AN ACCOUNT!</h1>
 <div class="new-user">
   <%= form_with model: @user, local: true do |f| %>
     <%= f.label "EMAIL" %>
@@ -9,4 +9,7 @@
     <%= f.text_field :password %>
     <%= f.submit %>
   <% end %>
+</div>
+<div class="login">
+  <%= link_to "Already have an account?", login_path %>
 </div>
