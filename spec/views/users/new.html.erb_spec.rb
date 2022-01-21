@@ -25,7 +25,6 @@ RSpec.describe 'users/new.html.erb', type: :view do
 
     expect(current_path).to eq(login_path)
     within '.login-form' do
-      fill_in 'email', with: 'dkulback@gmail.com'
       fill_in 'login', with: 'dkulback'
       fill_in 'password', with: '12345'
       click_on 'Log In'
@@ -45,8 +44,22 @@ RSpec.describe 'users/new.html.erb', type: :view do
 
     expect(current_path).to eq(login_path)
     within '.login-form' do
-      fill_in 'email', with: 'dkulback@gmail.com'
       fill_in 'login', with: 'dkulback'
+      fill_in 'password', with: '123456'
+      click_on 'Log In'
+    end
+    within '.error' do
+      expect(page).to have_content('invalid password or username')
+    end
+  end
+  it 'wont login in a user that doesnt exist' do
+    User.create!(login: 'dkulback', email: 'dkulback@gmail.com', password: '12345')
+    visit root_path
+    click_link 'Already have an account?'
+
+    expect(current_path).to eq(login_path)
+    within '.login-form' do
+      fill_in 'login', with: 'dkulbackk'
       fill_in 'password', with: '123456'
       click_on 'Log In'
     end
