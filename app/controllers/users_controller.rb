@@ -27,8 +27,6 @@ class UsersController < ApplicationController
   def login
     user = User.find_by(login: params[:login])
     if user.authenticate(params[:password])
-      require 'pry'
-      binding.pry
       session[:user_id] = user.id
       flash[:success] = "Welcome #{user.login}!"
       redirect_to user_path(user)
