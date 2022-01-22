@@ -1,0 +1,12 @@
+<div class="stocks">
+  <ol>
+    <% @stocks.each do |stock| %>
+      <li>ticker: <%= stock.stock %></li>
+    </ol>
+    <ul>
+      <li>no of comments: <%= stock.comments %></li>
+      <li>score: <%= stock.score %></li>
+      <li>sentiment: <%= stock.sentiment %></li>
+    </ul>
+  <% end  %>
+</div>

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'users/new.html.erb', type: :view do
   it 'has a form to register a user' do
-    visit root_path
+    visit new_user_path
 
     within '.new-user' do
       fill_in 'user_email', with: 'dkulback@gmail.com'
@@ -18,53 +18,22 @@ RSpec.describe 'users/new.html.erb', type: :view do
       expect(page).to have_content("Welcome #{user.login}!")
     end
   end
-  it 'has a link to sign in with valid credentials' do
-    User.create!(login: 'dkulback', email: 'dkulback@gmail.com', password: '12345')
-    visit root_path
-    click_link 'Already have an account?'
+  it 'has a flash message with errors of the user' do
+    user = User.create!(email: 'dkulback@gmail.com', login: 'pee pee and poop', password: '1234')
+    visit new_user_path
 
-    expect(current_path).to eq(login_path)
-    within '.login-form' do
-      fill_in 'login', with: 'dkulback'
-      fill_in 'password', with: '12345'
-      click_on 'Log In'
+    within '.new-user' do
+      fill_in 'user_email', with: 'dkulback@gmail.com'
+      fill_in 'user_login', with: 'dkulback'
+      fill_in 'user_password', with: '12345'
+      click_on 'Create User'
 
       user = User.first
-      expect(current_path).to eq(user_path(user))
+      expect(current_path).to eq(users_path)
     end
-    within '.success' do
-      user = User.first
-      expect(page).to have_content("Welcome #{user.login}!")
-    end
-  end
-  it 'wont login in with BAD credentials' do
-    User.create!(login: 'dkulback', email: 'dkulback@gmail.com', password: '12345')
-    visit root_path
-    click_link 'Already have an account?'
-
-    expect(current_path).to eq(login_path)
-    within '.login-form' do
-      fill_in 'login', with: 'dkulback'
-      fill_in 'password', with: '123456'
-      click_on 'Log In'
-    end
-    within '.error' do
-      expect(page).to have_content('invalid password or username')
-    end
-  end
-  it 'wont login in a user that doesnt exist' do
-    User.create!(login: 'dkulback', email: 'dkulback@gmail.com', password: '12345')
-    visit root_path
-    click_link 'Already have an account?'
-
-    expect(current_path).to eq(login_path)
-    within '.login-form' do
-      fill_in 'login', with: 'dkulbackk'
-      fill_in 'password', with: '123456'
-      click_on 'Log In'
-    end
-    within '.error' do
-      expect(page).to have_content('invalid password or username')
+    user = User.first
+    within '.failure' do
+      expect(page).to have_content('["Email has already been taken"]')
     end
   end
 end

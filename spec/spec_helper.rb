@@ -18,24 +18,10 @@ RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
-  #   config.before(:each) do
+  # config.before(:each) do
   #   json_response1 = File.read('spec/fixtures/repo.json')
   #   stub_request(:get, 'https://api.github.com/repos/hannahkwarren/little-esty-shop').to_return(status: 200,
   #                                                                                               body: json_response1)
-  #
-  #   json_response2 = File.read('spec/fixtures/pull_request.json')
-  #   stub_request(:get, 'https://api.github.com/repos/hannahkwarren/little-esty-shop/pulls?state=closed').to_return(
-  #     status: 200, body: json_response2
-  #   )
-  #
-  #   json_response3 = File.read('spec/fixtures/contributors.json')
-  #   stub_request(:get, 'https://api.github.com/repos/hannahkwarren/little-esty-shop/contributors').to_return(
-  #     status: 200, body: json_response3
-  #   )
-  #   json_response4 = File.read('spec/fixtures/holiday.json')
-  #   stub_request(:get, 'https://date.nager.at/api/v3/nextpublicholidays/us').to_return(
-  #     status: 200, body: json_response4
-  #   )
   # end
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`

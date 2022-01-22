@@ -1,0 +1,302 @@
+[
+    {
+        "no_of_comments": 71,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.13,
+        "ticker": "GME"
+    },
+    {
+        "no_of_comments": 30,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.257,
+        "ticker": "TSLA"
+    },
+    {
+        "no_of_comments": 25,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.22,
+        "ticker": "PLTR"
+    },
+    {
+        "no_of_comments": 23,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.984,
+        "ticker": "NFLX"
+    },
+    {
+        "no_of_comments": 20,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.159,
+        "ticker": "AMC"
+    },
+    {
+        "no_of_comments": 13,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.218,
+        "ticker": "QQQ"
+    },
+    {
+        "no_of_comments": 11,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.04,
+        "ticker": "AAPL"
+    },
+    {
+        "no_of_comments": 10,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.151,
+        "ticker": "TA"
+    },
+    {
+        "no_of_comments": 9,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.114,
+        "ticker": "MSFT"
+    },
+    {
+        "no_of_comments": 8,
+        "sentiment": "Bearish",
+        "sentiment_score": 0.0,
+        "ticker": "PTON"
+    },
+    {
+        "no_of_comments": 7,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.286,
+        "ticker": "IBM"
+    },
+    {
+        "no_of_comments": 7,
+        "sentiment": "Bearish",
+        "sentiment_score": -0.2,
+        "ticker": "OI"
+    },
+    {
+        "no_of_comments": 6,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.19,
+        "ticker": "AMD"
+    },
+    {
+        "no_of_comments": 6,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.67,
+        "ticker": "WISH"
+    },
+    {
+        "no_of_comments": 6,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.227,
+        "ticker": "EV"
+    },
+    {
+        "no_of_comments": 5,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.008,
+        "ticker": "NIO"
+    },
+    {
+        "no_of_comments": 4,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.305,
+        "ticker": "MA"
+    },
+    {
+        "no_of_comments": 4,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.202,
+        "ticker": "FANG"
+    },
+    {
+        "no_of_comments": 4,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.236,
+        "ticker": "NOW"
+    },
+    {
+        "no_of_comments": 4,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.952,
+        "ticker": "IP"
+    },
+    {
+        "no_of_comments": 4,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.42,
+        "ticker": "FB"
+    },
+    {
+        "no_of_comments": 4,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.196,
+        "ticker": "TV"
+    },
+    {
+        "no_of_comments": 4,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.151,
+        "ticker": "DKNG"
+    },
+    {
+        "no_of_comments": 4,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.252,
+        "ticker": "BB"
+    },
+    {
+        "no_of_comments": 4,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.133,
+        "ticker": "TD"
+    },
+    {
+        "no_of_comments": 3,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.415,
+        "ticker": "SQQQ"
+    },
+    {
+        "no_of_comments": 3,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.526,
+        "ticker": "MTCH"
+    },
+    {
+        "no_of_comments": 3,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.065,
+        "ticker": "LCID"
+    },
+    {
+        "no_of_comments": 3,
+        "sentiment": "Bearish",
+        "sentiment_score": -0.109,
+        "ticker": "NVDA"
+    },
+    {
+        "no_of_comments": 3,
+        "sentiment": "Bearish",
+        "sentiment_score": -0.382,
+        "ticker": "CLOV"
+    },
+    {
+        "no_of_comments": 3,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.84,
+        "ticker": "DTE"
+    },
+    {
+        "no_of_comments": 3,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.903,
+        "ticker": "TX"
+    },
+    {
+        "no_of_comments": 3,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.053,
+        "ticker": "HOOD"
+    },
+    {
+        "no_of_comments": 3,
+        "sentiment": "Bearish",
+        "sentiment_score": 0.0,
+        "ticker": "MRNA"
+    },
+    {
+        "no_of_comments": 3,
+        "sentiment": "Bearish",
+        "sentiment_score": 0.0,
+        "ticker": "TQQQ"
+    },
+    {
+        "no_of_comments": 3,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.686,
+        "ticker": "SHOP"
+    },
+    {
+        "no_of_comments": 3,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.211,
+        "ticker": "RE"
+    },
+    {
+        "no_of_comments": 3,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.293,
+        "ticker": "AMZN"
+    },
+    {
+        "no_of_comments": 2,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.44,
+        "ticker": "ABNB"
+    },
+    {
+        "no_of_comments": 2,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.026,
+        "ticker": "UK"
+    },
+    {
+        "no_of_comments": 2,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.395,
+        "ticker": "GE"
+    },
+    {
+        "no_of_comments": 2,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.166,
+        "ticker": "BMBL"
+    },
+    {
+        "no_of_comments": 2,
+        "sentiment": "Bearish",
+        "sentiment_score": 0.0,
+        "ticker": "BNTX"
+    },
+    {
+        "no_of_comments": 2,
+        "sentiment": "Bearish",
+        "sentiment_score": -0.014,
+        "ticker": "VIAC"
+    },
+    {
+        "no_of_comments": 2,
+        "sentiment": "Bearish",
+        "sentiment_score": 0.0,
+        "ticker": "SPCE"
+    },
+    {
+        "no_of_comments": 2,
+        "sentiment": "Bearish",
+        "sentiment_score": 0.0,
+        "ticker": "DM"
+    },
+    {
+        "no_of_comments": 2,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.778,
+        "ticker": "ASAN"
+    },
+    {
+        "no_of_comments": 2,
+        "sentiment": "Bearish",
+        "sentiment_score": 0.0,
+        "ticker": "DIS"
+    },
+    {
+        "no_of_comments": 2,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.454,
+        "ticker": "BAC"
+    },
+    {
+        "no_of_comments": 2,
+        "sentiment": "Bullish",
+        "sentiment_score": 0.209,
+        "ticker": "ON"
+    }
+]

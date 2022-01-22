@@ -12,30 +12,27 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = User.create(user_params)
-    if user.save!
-      flash[:success] = "Welcome #{user.login}!"
-      redirect_to user_path(user)
+    # if user_params.present?
+    #   user = user_params
+    #   user[:login] = user[:login].downcase
+    #   user[:email] = user[:email].downcase
+    #   new_user = User.create(user)
+    # else
+    #   flash.now[:failure] = 'Please input corrected fields'
+    #   render 'new'
+    # end
+    user = user_params
+    user[:login] = user[:login].downcase
+    user[:email] = user[:email].downcase
+    new_user = User.create(user)
+    if new_user.save
+      flash[:success] = "Welcome #{new_user.login}!"
+      redirect_to user_path(new_user)
     else
-      flash[:failure] = 'Please input corrected fields'
+      flash[:failure] = new_user.errors.full_messages.each do |msg|
+        msg
+      end
       render 'new'
-    end
-  end
-
-  def login_form; end
-
-  def login
-    user = User.find_by(login: params[:login])
-    if user.nil?
-      flash[:error] = 'invalid password or username'
-      render :login_form
-    elsif user.authenticate(params[:password])
-      session[:user_id] = user.id
-      flash[:success] = "Welcome #{user.login}!"
-      redirect_to user_path(user)
-    else
-      flash[:error] = 'invalid password or username'
-      render :login_form
     end
   end
 
