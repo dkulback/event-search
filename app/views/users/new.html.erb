@@ -1,12 +1,12 @@
 <h1>WELCOME! PLEASE CREATE AN ACCOUNT!</h1>
 <div class="new-user">
-  <%= form_with model: @user, local: true do |f| %>
+  <%= form_with model: @user do |f| %>
     <%= f.label "EMAIL" %>
     <%= f.text_field :email %>
-    <%= f.label "LOGIN" %>
+    <%= f.label :login, "LOGIN" %>
     <%= f.text_field :login %>
-    <%= f.label "PASSWORD" %>
-    <%= f.text_field :password %>
+    <%= f.label :password, "PASSWORD" %>
+    <%= f.password_field :password %>
     <%= f.submit %>
   <% end %>
 </div>

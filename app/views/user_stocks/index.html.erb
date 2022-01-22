@@ -1,12 +1,13 @@
+<h1> WALLSTREET BETS API  </h1>
 <div class="stocks">
   <ol>
     <% @stocks.each do |stock| %>
       <li>ticker: <%= stock.stock %></li>
-    </ol>
-    <ul>
-      <li>no of comments: <%= stock.comments %></li>
-      <li>score: <%= stock.score %></li>
-      <li>sentiment: <%= stock.sentiment %></li>
-    </ul>
-  <% end  %>
+      <ul>
+        <li>no of comments: <%= stock.comments %></li>
+        <li>score: <%= stock.score %></li>
+        <li>sentiment: <%= stock.sentiment %></li>
+      </ul>
+    <% end  %>
+  </ol>
 </div>

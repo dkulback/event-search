@@ -12,15 +12,6 @@ class UsersController < ApplicationController
   end
 
   def create
-    # if user_params.present?
-    #   user = user_params
-    #   user[:login] = user[:login].downcase
-    #   user[:email] = user[:email].downcase
-    #   new_user = User.create(user)
-    # else
-    #   flash.now[:failure] = 'Please input corrected fields'
-    #   render 'new'
-    # end
     user = user_params
     user[:login] = user[:login].downcase
     user[:email] = user[:email].downcase
