@@ -1,5 +1,5 @@
 <div class="login-form">
-  <%= form_with url: login_path, method: :post do |f| %>
+  <%= form_with url: login_path, method: :post, local: true do |f| %>
     <%= f.label "LOGIN" %>
     <%= f.text_field :login %>
     <%= f.label "PASSWORD" %>

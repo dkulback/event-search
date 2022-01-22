@@ -5,14 +5,11 @@ class LoginController < ApplicationController
 
   def login
     user = User.find_by(login: params[:login])
-    if user.authenticate(params[:password])
+    if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      flash[:success] = "Welcome #{user.login}!"
-      redirect_to user_path(user)
+      redirect_to user_path(user), notice: "Welcome #{user.login}!"
     else
-      flash[:error] = 'invalid password or username'
-      redirect_to login_path
-
+      redirect_to login_path, flash: { error: 'invalid password or username' }
     end
   end
 end

@@ -1,6 +1,6 @@
 <h1>WELCOME! PLEASE CREATE AN ACCOUNT!</h1>
 <div class="new-user">
-  <%= form_with model: @user do |f| %>
+  <%= form_with model: @user, local: true do |f| %>
     <%= f.label "EMAIL" %>
     <%= f.text_field :email %>
     <%= f.label :login, "LOGIN" %>

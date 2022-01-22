@@ -20,10 +20,7 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome #{new_user.login}!"
       redirect_to user_path(new_user)
     else
-      flash[:failure] = new_user.errors.full_messages.each do |msg|
-        msg
-      end
-      render 'new'
+      redirect_to new_user_path, flash: { error: new_user.errors.full_messages }
     end
   end
 
