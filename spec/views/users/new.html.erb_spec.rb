@@ -29,7 +29,7 @@ RSpec.describe 'users/new.html.erb', type: :view do
       click_on 'Create User'
 
       user = User.first
-      expect(current_path).to eq(users_path)
+      expect(current_path).to eq(new_user_path)
     end
     user = User.first
     within '.failure' do

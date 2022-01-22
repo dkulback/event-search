@@ -1,0 +1,12 @@
+<h1> Crimes in the uk API  </h1>
+<div class="crimes">
+  <ol>
+    <% @crimes.each do |crime| %>
+      <li>crime category: <%= crime.category %></li>
+      <ul>
+        <li>crime outcome: <%= crime.outcome %></li>
+        <li>month: <%= crime.month %></li>
+      </ul>
+    <% end  %>
+  </ol>
+</div>
