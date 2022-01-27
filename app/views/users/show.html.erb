@@ -1,5 +1,6 @@
 <div class="apis">
   <%= link_to "Check Stocks", user_stocks_path(@user) %>
+  <%= link_to "Search For Bible Passages", user_bible_verses_path(@user) %>
   <%= link_to "Check Crimes", user_crimes_path(@user) %>
 </div>
 <%= button_to "log out", logout_path, method: :delete %>
