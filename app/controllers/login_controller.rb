@@ -1,6 +1,6 @@
 class LoginController < ApplicationController
   def login_form
-    # flash.keep
+
   end
 
   def login
