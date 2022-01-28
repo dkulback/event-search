@@ -22,6 +22,10 @@ RSpec.configure do |config|
     json_response1 = File.read('spec/fixtures/stocks.json')
     stub_request(:get, 'https://dashboard.nbshare.io/api/v1/apps/reddit').to_return(status: 200,
                                                                                     body: json_response1)
+    response_2 = File.read('spec/fixtures/crimes.json')
+    stub_request(:get, 'https://data.police.uk/api/crimes-no-location?category=all-crime&force=leicestershire').to_return(
+      status: 200, body: response_2
+    )
   end
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`

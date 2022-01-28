@@ -1,0 +1,16 @@
+<div class ="search-bible">
+<%= form_with url: user_bible_verses_path(@user), method: :get, local: true do |f| %>
+  <%= f.label :search_book, 'Search for book' %>
+  <%= f.text_field :search_book %>
+  <%= f.label :search_chapter, 'Search for chapter' %>
+  <%= f.text_field :search_chapter %>
+  <%= f.label :search_verse, 'Search for verse' %>
+  <%= f.text_field :search_verse %>
+  <%= f.submit 'Search' %>
+<% end %>
+</div>
+<div class='bible'>
+<% if @passage %>
+  <h2> Reference <%= @passage.reference %> Passage <%= @passage.text %> </h2>
+<% end %>
+</div>

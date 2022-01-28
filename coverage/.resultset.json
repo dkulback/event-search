@@ -247,6 +247,8 @@
           1,
           1,
           1,
+          1,
+          1,
           null,
           null,
           null
@@ -303,6 +305,40 @@
           1,
           1,
           1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/darrenkulback/event_search/spec/views/users/bible_verse_search_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -426,6 +462,16 @@
           1,
           null,
           null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -438,6 +484,29 @@
           1,
           1,
           1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/darrenkulback/event_search/spec/views/users/uk_crimes_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           1,
           null,
           1,
@@ -473,15 +542,15 @@
         "lines": [
           1,
           1,
-          4,
+          6,
           0,
           null,
-          4,
+          6,
           null,
           null,
           null,
           1,
-          4,
+          5,
           null,
           null,
           1,
@@ -490,11 +559,6 @@
           2,
           2,
           2,
-          2,
-          2,
-          1,
-          1,
-          null,
           1,
           1,
           null,
@@ -513,6 +577,47 @@
       "/Users/darrenkulback/event_search/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/darrenkulback/event_search/app/controllers/user_bible_verses_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/darrenkulback/event_search/app/services/bible_search.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/darrenkulback/event_search/app/services/passage.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -535,11 +640,8 @@
           3,
           2,
           2,
-          2,
           null,
           1,
-          1,
-          null,
           null,
           null,
           null
@@ -606,8 +708,59 @@
           null,
           null
         ]
+      },
+      "/Users/darrenkulback/event_search/app/controllers/user_uk_crimes_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/darrenkulback/event_search/app/services/crime_list.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          128,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/darrenkulback/event_search/app/services/crime_service.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/darrenkulback/event_search/app/services/crime.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          128,
+          128,
+          128,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1642878971
+    "timestamp": 1643326690
   }
 }
