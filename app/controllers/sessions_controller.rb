@@ -5,6 +5,14 @@ class SessionsController < ApplicationController
   end
 
   def create
-    binding.pry
+    auth_hash = request.env['omniauth.auth']
+    email = auth_hash['info']['email']
+    name = auth_hash['info']['name']
+
+    user = User.find_or_create_by(email: email)
+    user.update(login: name)
+    session[:access_token] = auth_hash['credentials']['token']
+
+    redirect_to user_path(user)
   end
 end
