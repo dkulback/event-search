@@ -9,4 +9,5 @@ Rails.application.routes.draw do
     resources :bible_verses, only: :index, controller: :user_bible_verses
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/auth/google_oauth2/callback', to: 'sessions#create'
 end
